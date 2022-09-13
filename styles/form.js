@@ -19,8 +19,31 @@ export const StyleForm = styled.div`
     box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
     margin-top: 10%;
   }
+
+  .form-home {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    max-width: 520px;
+    height: 380px;
+    padding: 15px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+    margin-top: 10%;
+  }
   .text-center {
     text-align: center;
+  }
+
+  .homeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+
   }
   /* INPUTS */
   .input-form {
@@ -39,9 +62,10 @@ export const StyleForm = styled.div`
   }
   /* BUTTON SIGNUP */
   .button-signup {
+    margin-bottom: 2%;
     display: inline-block;
     font-weight: 400;
-    color: #ffffff;
+    color: black;
     height: 45px;
     width: 90%;
     text-align: center;
@@ -52,7 +76,23 @@ export const StyleForm = styled.div`
     cursor: pointer;
     transition: 0.2s;
   }
+
+  .button-home {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-weight: 400;
+    color: black;
+    height: 45px;
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
   .fondo-color-signup {
-    background: #833ac7;
+    background: #FF5801;
   }
 `;

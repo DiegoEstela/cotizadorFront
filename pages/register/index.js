@@ -26,7 +26,7 @@ function Register() {
         Credentials.email,
         Credentials.password
       );
-      push("/");
+      push("/home");
     } catch (error) {
       console.log(error);
     }
@@ -63,8 +63,6 @@ function Register() {
               Registrarse
             </button>
           </div>
-          <p className="text-center">O también</p>
-          <br />
           <p className="text-center">
             ¿Ya tienes cuenta? <Link href="/login">Inicia sesión</Link>
           </p>

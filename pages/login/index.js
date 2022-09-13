@@ -33,12 +33,13 @@ function Login() {
 
   const loginUser = async () => {
     try {
+      console.log("ok")
       await signInWithEmailAndPassword(
         auth,
         Credentials.email,
         Credentials.password
       );
-      push("/");
+      push("/home");
     } catch ({message}) {
       if (message === "Firebase: Error (auth/wrong-password).") {
         showMessage("Contraseña incorrecta")
@@ -78,8 +79,6 @@ function Login() {
               Iniciar sesión
             </button>
           </div>
-          <p className="text-center">O también</p>
-          <br />
           <p className="text-center">
             ¿Aún no tienes cuenta? <Link href="/register">Registrarse</Link>
           </p>
