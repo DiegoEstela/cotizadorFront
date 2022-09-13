@@ -22,7 +22,7 @@ export const useAuthUser = () => {
         setisLogged(true);
         // IF THE USER IS LOGGED IN AND WANTS TO VISIT THE ROUTES
         if (pathname === "/login" || pathname === "/register") {
-          push("/");
+          push("/home");
         }
       }
     });

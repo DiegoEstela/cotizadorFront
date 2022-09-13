@@ -5,8 +5,6 @@ function index() {
   return (
     
     <StyleForm>
-
-      
         <div className="form-home">
           <h1 className="text-center text-login">COTIZADOR WEB</h1>
           <div className="homeContainer">

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { StyleForm } from "../../styles/form";
 import Link from "next/link";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../db/firebase";
+import { auth } from "../../db/firebase.js";
 import { useRouter } from "next/router";
 
 function Register() {
