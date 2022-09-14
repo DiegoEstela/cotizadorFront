@@ -1,29 +1,31 @@
-
 import { StyleForm } from "../../styles/form";
 import Link from "next/link";
 function index() {
   return (
-    
-    <StyleForm>
-        <div className="form-home">
-          <h1 className="text-center text-login">COTIZADOR WEB</h1>
-          <div className="homeContainer">
+    <div class="flex justify-center content-center ">
+      <div class="flex w-9/12 mt-11 max-w-lg p-6 rounded-lg shadow-lg flex-col h-2/4">
+        <h1 className="text-center mb-10">COTIZADOR WEB</h1>
+        <div className="flex flex-col justify-evenly ">
+          <Link href="./home">
             <button
-              className="button-home fondo-color-signup"
-              onClick={console.log("gola")}
+              type="button"
+              class=" mb-10 h-2/4 py-5 bg-orange-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md  hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
             >
-              Nueva cotizacion
+              Nueva Cotizacion
             </button>
+          </Link>
+          <Link href="./home">
             <button
-              className="button-home fondo-color-signup"
-              onClick={console.log("gola")}
+              type="button"
+              class="h-2/4 py-5 bg-orange-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md  hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
             >
-              ABM generico
+              ABM Generico
             </button>
-          </div>
+          </Link>
         </div>
-    </StyleForm>
-  )
+      </div>
+    </div>
+  );
 }
 
-export default index
+export default index;
